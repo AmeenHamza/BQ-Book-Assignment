@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .gallery-image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #zoomParagraph {
+            font-size: 16px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>Assignment -18<br />
+    <div class="image-gallery"><img
+            src="https://cdn.dxomark.com/wp-content/uploads/medias/post-145241/Oppo-Find-X6_featured-image-packshot-review.jpg"
+            alt="Image 1" class="gallery-image"><img
+            src="https://www.sammobile.com/wp-content/uploads/2023/03/Galaxy-S23-Ultra-Green-4-465x199.jpg"
+            alt="Image 2" class="gallery-image"><img
+            src="https://img.etimg.com/thumb/msid-59424967,width-640,height-480,imgsize-150364,resizemode-4/nokia-3310.jpg" alt="Image 3"
+            class="gallery-image"><img
+            src="https://www.gizmochina.com/wp-content/uploads/2019/10/Oppo-A11.jpeg" alt="Image 4"
+            class="gallery-image"></div>
+    <div id="imageModal" class="modal"><span class="close">&times;</span><img id="modalImage" src="" alt="Modal Image">
+    </div><br />
+    <p id="zoomParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><button id="zoomInBtn">Zoom In
+        (+)</button><button id="zoomOutBtn">Zoom Out (-)</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
